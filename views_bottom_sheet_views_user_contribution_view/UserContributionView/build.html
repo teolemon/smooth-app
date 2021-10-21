@@ -159,6 +159,12 @@ Widget build(BuildContext context) {
                               .contribute_donate_header,
                           onPressed: () =&gt; _donate(context),
                         ),
+
+                        &#47;&#47;Contributors list
+                        SmoothListTile(
+                          text: AppLocalizations.of(context)!.contributors,
+                          onPressed: () =&gt; _contributors(context),
+                        ),
                       ],
                     ),
                     SizedBox(
@@ -238,7 +244,7 @@ Widget build(BuildContext context) {
 <footer>
   <span class="no-break">
     smooth_app
-      0.0.1+5
+      0.0.1+6
   </span>
 
   
