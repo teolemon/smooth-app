@@ -21,7 +21,6 @@ enum MatchedProductStatus {
 abstract class MatchedProduct {
   static MatchedProduct getMatchedProduct(
     final Product product,
-    final ProductPreferencesManager productPreferencesManager,
     final UserPreferences userPreferences,
   ) =>
       userPreferences.getFlag(
